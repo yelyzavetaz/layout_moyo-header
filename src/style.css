@@ -5,6 +5,7 @@ html {
   font-size: 12px;
 
   --header-height: 60px;
+  --active-color: #00acdc;
 }
 
 body {
@@ -45,14 +46,15 @@ body {
   height: var(--header-height);
   color: #000;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav_link:hover {
-  color: #00acdc;
+  color: var(--active-color);
 }
 
 .nav_link.is-active {
-  color: #00acdc;
+  color: var(--active-color);
 }
 
 .nav_link.is-active::after {
